@@ -5,11 +5,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Arya Devi V S | Portfolio</title>
-<!-- https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
-
-body { font-family: 'Poppins', sans-serif; background:#0f172a; color:#e2e8f0; }
+body { font-family:'Poppins', sans-serif; background:#0f172a; color:#e2e8f0; }
 
 header {
   height:100vh;
@@ -33,6 +33,17 @@ header img {
 h1 { font-size:40px; }
 header p { color:#38bdf8; margin:10px 0; }
 
+.contact-inline {
+  margin-top:15px;
+  font-size:15px;
+  color:#cbd5f5;
+}
+
+.contact-inline a {
+  color:#38bdf8;
+  text-decoration:none;
+}
+
 .btn {
   margin-top:20px;
   padding:10px 20px;
@@ -43,10 +54,7 @@ header p { color:#38bdf8; margin:10px 0; }
   cursor:pointer;
 }
 
-section {
-  padding:60px 10%;
-}
-
+section { padding:30px 10%; }
 h2 { margin-bottom:20px; color:#38bdf8; }
 
 .card {
@@ -54,20 +62,11 @@ h2 { margin-bottom:20px; color:#38bdf8; }
   padding:20px;
   border-radius:10px;
   margin:10px 0;
-  transition:0.3s;
 }
 
-.card:hover {
-  transform:translateY(-5px);
-}
+ul { line-height:1.6; }
 
-ul { line-height:1.8; }
-
-footer {
-  text-align:center;
-  padding:20px;
-  background:#020617;
-}
+footer { text-align:center; padding:20px; background:#020617; }
 
 .toggle {
   position:fixed;
@@ -79,23 +78,12 @@ footer {
   border-radius:50%;
 }
 
-.light {
-  background:#f4f6f8;
-  color:#000;
-}
-
+.light { background:#f4f6f8; color:#000; }
 .light .card { background:#fff; }
-
 </style>
 </head>
+
 <body>
-  
-<div class="topbar">
-  <a href="mailto:aryadevi473@gmail.com">aryadevi473@gmail.com</a> |
-  <span>+91 7902426808</span> |
-  https://www.linkedin.com/in/arya-devi-vs |
-  <span>Idukki, India 685501</span>
-</div>
 
 <div class="toggle" onclick="toggleMode()">🌙</div>
 
@@ -103,61 +91,95 @@ footer {
   <img src="profile.jpeg" alt="Profile Photo">
   <h1>Arya Devi V S</h1>
   <p>Quality Analyst Engineer</p>
-  <a href="#contact"><button class="btn">Contact Me</button></a>
+
+  <div class="contact-inline">
+    <a href="mailto:aryadevi473@gmail.com">aryadevi473@gmail.com</a> |
+    +91 7902426808 |   
+<a href="https://www.linkedin.com/in/arya-devi-vs" target="_blank">
+  www.linkedin.com/in/arya-devi-vs
+</a> 
+  </div>
+
 </header>
 
 <section>
-  <h2>About Me</h2>
+  <h2>Profile Summary</h2>
   <div class="card">
-    3+ years experience in software testing with expertise in manual & automation testing using Playwright. Strong knowledge in SDLC, STLC, and quality assurance processes.
+    3+ years of professional experience as a Software Test Analyst with strong knowledge in Software Testing Methodologies and both manual and automation testing. Skilled in creating test cases, defect tracking, and delivering high-quality products using JIRA, Zephyr Scale. Good understanding of SDLC and STLC.
   </div>
 </section>
 
 <section>
-  <h2>Experience</h2>
+  <h2>Professional Experience</h2>
+
   <div class="card">
     <h3>Quality Analyst Engineer</h3>
-    <p>Valoriz Digital Pvt Ltd (2024 - Present)</p>
+    <p>Valoriz Digital Pvt Ltd (Jan 2024 – Present)</p>
     <ul>
-      <li>Automation using Playwright</li>
-      <li>Production monitoring</li>
-      <li>Cross-platform testing</li>
+      <li>Manual and automation testing across releases</li>
+      <li>Production monitoring and SMP platform testing</li>
+      <li>Playwright automation for regression</li>
+      <li>Release quality validation</li>
+      <li>Team mentoring and agile participation</li>
     </ul>
   </div>
-  
+
+  <div class="card">
+    <h3>Magrabi Project</h3>
+    <ul>
+      <li>Security testing using OWASP ZAP</li>
+      <li>Generated security reports</li>
+    </ul>
+  </div>
+
   <div class="card">
     <h3>Quality Analyst Trainee</h3>
-    <p>Fenix Outdoor (2023 - 2024)</p>
+    <p>Fenix Outdoor (2023 – 2024)</p>
     <ul>
-      <li>Regression testing</li>
-      <li>Test case creation</li>
-      <li>Agile workflows</li>
+      <li>Test case creation & documentation</li>
+      <li>Performance testing using Lighthouse</li>
+      <li>Automation testing using Playwright</li>
+      <li>Agile practices participation</li>
     </ul>
   </div>
+
+  <div class="card">
+    <h3>Composable Commerce Project</h3>
+    <ul>
+      <li>Tested Kibo-based commerce platform</li>
+      <li>Worked with NextJS storefront, CMS, APIs</li>
+      <li>End-to-end test execution & bug tracking</li>
+    </ul>
+  </div>
+
 </section>
 
 <section>
-  <h2>Projects</h2>
+  <h2>Area of Expertise</h2>
   <div class="card">
-    <ul>
-      <li>Magrabi - Security testing using OWASP ZAP</li>
-      <li>Composable Commerce platform testing</li>
-    </ul>
+    Web Testing • Security Testing • API Testing • Automation • Documentation
   </div>
 </section>
 
 <section>
   <h2>Skills</h2>
   <div class="card">
-    Playwright • Postman • OWASP ZAP • JIRA • Automation Testing • API Testing
+    Playwright • Postman • OWASP ZAP • JIRA • Zephyr Scale
   </div>
 </section>
 
 <section>
-  <h2>Contact</h2>
-  <div class="card" id="contact">
-    Email: your-email@example.com <br>
-    LinkedIn: your-linkedin-link
+  <h2>Soft Skills</h2>
+  <div class="card">
+    Communication • Teamwork • Problem Solving • Planning • Creativity • Adaptability
+  </div>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="card">
+    MCA – Marian College (2018–2020)<br>
+    BCA – JPM Arts & Science College (2015–2018)
   </div>
 </section>
 
